@@ -14,8 +14,8 @@
 This App does't need any setup, all you need is
 * Clone the repository to your local machine or download the project
 * Open the index.html file in your browser to see the test results
-* if the lower part of the page all dots are green assures that the required functionality works as expected and the tests ran successfully
-* if the lower part of the page one or more dots are red means that some tests failed
+* If in the lower part of the page all dots are green assures that the required functionality works as expected and the tests ran successfully
+* If in the lower part of the page one or more dots are red means that some tests failed
 
 ### The following functionality (in app.js file) is being tested
 1. allFeeds variable has been defined and that it is not empty ('RSS Feeds' suite => 'are defined' spec).
