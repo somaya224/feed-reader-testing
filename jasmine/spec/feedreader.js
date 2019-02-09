@@ -33,7 +33,7 @@ $(function() {
         it('has a URL', () => {
             for(const obj of allFeeds){
                 expect(obj.url).toBeDefined();
-                expect(obj.url).not.toBeNull();
+                expect(obj.url).length.toBeGreaterThan(0);
             }
         });
 
@@ -44,7 +44,7 @@ $(function() {
         it('has a name', () => {
             for(const obj of allFeeds){
                 expect(obj.name).toBeDefined();
-                expect(obj.name).not.toBeNull();
+                expect(obj.name).length.toBeGreaterThan(0);
             }
         });
     });
@@ -62,7 +62,7 @@ $(function() {
          * hiding/showing of the menu element.
          */
          it('hidden by default', () => {
-            expect(body.className).toEqual('menu-hidden')
+            expect(body.classList.contains('menu-hidden')).toBe(true);
         });
 
          /* TODO: Write a test that ensures the menu changes
